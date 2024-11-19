@@ -1,0 +1,23 @@
+---
+import '../styles/globals.css';
+import Header from '../components/Header';
+import Footer from '../components/Footer.astro';
+---
+<!DOCTYPE html>
+<html lang="es" class="h-full">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Sergio Cruz</title>
+    <meta name="description" content="Portafolio de Sergio Cruz, desarrollador y estudiante de Matemáticas Aplicadas y Computación.">
+    <link rel="icon" href="/favicon.ico">
+  </head>
+
+  <body class="flex flex-col min-h-screen bg-background dark:bg-gray-900 text-text dark:text-gray-100 transition-colors duration-300">
+    <Header client:load />
+    <main class="flex-grow pt-16">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

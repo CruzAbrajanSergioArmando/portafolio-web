@@ -1,0 +1,98 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard';
+---
+<BaseLayout>
+  <main class="container mx-auto px-4 py-12">
+    
+    <!-- Sección: Sobre Mí -->
+    <section id="sobreMi" class="mb-24 animate-fade-in">
+      <h1 class="text-5xl font-bold mb-6 text-center text-gray-900 dark:text-gray-100">Hola, soy Sergio Cruz</h1>
+      <div class="max-w-3xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-md p-8">
+        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+          Soy estudiante de Matemáticas Aplicadas y Computación en la UNAM y un apasionado desarrollador de software. Me especializo en el desarrollo de aplicaciones web, combinando conocimientos en métodos numéricos, álgebra y programación para crear soluciones efectivas y eficientes.
+        </p>
+        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+          Disfruto colaborando en proyectos de código abierto y explorando nuevas tecnologías. Mi objetivo es desarrollar herramientas que no solo resuelvan problemas, sino que también mejoren la experiencia del usuario.
+        </p>
+        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+          ¡Conectemos! Si tienes alguna propuesta de colaboración o deseas conocer más sobre mi trabajo, no dudes en contactarme.
+        </p>
+      </div>
+    </section>
+    
+    <!-- Sección: Proyectos -->
+    <section id="proyectos" class="mb-24 animate-fade-in">
+      <h2 class="text-4xl font-semibold text-center mb-12 text-gray-900 dark:text-gray-100">Proyectos Destacados</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <ProjectCard
+          title="Aplicación de Ecuaciones Diferenciales"
+          description="Una aplicación web que utiliza métodos numéricos para resolver ecuaciones diferenciales complejas, proporcionando visualizaciones interactivas."
+          link="https://github.com/tu-usuario/proyecto-ecuaciones"
+        />
+        <ProjectCard
+          title="Sistema de Gestión de Inventario"
+          description="Un sistema eficiente de gestión de inventario basado en algoritmos de optimización para mejorar la precisión y reducir costos."
+          link="https://github.com/tu-usuario/proyecto-inventario"
+        />
+        <ProjectCard
+          title="Herramienta de Visualización de Datos"
+          description="Una herramienta poderosa para la visualización de datos que facilita el análisis estadístico avanzado mediante gráficos interactivos."
+          link="https://github.com/tu-usuario/proyecto-visualizacion"
+        />
+      </div>
+    </section>
+    
+    <!-- Sección: Contacto -->
+    <section id="contacto" class="mb-24 animate-fade-in">
+      <h2 class="text-4xl font-semibold text-center mb-12 text-gray-900 dark:text-gray-100">Contacto</h2>
+      <div class="max-w-2xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-md p-8">
+        <p class="text-lg text-center text-gray-700 dark:text-gray-300 mb-8">
+          ¿Interesado en colaborar o tienes alguna pregunta? ¡Hablemos!
+        </p>
+        <div class="flex justify-center space-x-6">
+          
+          <!-- Enlace Email -->
+          <a href="mailto:tu-email@ejemplo.com" class="flex items-center bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition-colors duration-300">
+            <!-- SVG de Email -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 13.065L0 5.5V18a2 2 0 002 2h20a2 2 0 002-2V5.5l-12 7.565z"/>
+              <path d="M12 15.5l12-7.565V4a2 2 0 00-2-2H2a2 2 0 00-2 2v3.935l12 7.565z"/>
+            </svg>
+            Email
+          </a>
+          
+          <!-- Enlace GitHub -->
+          <a href="https://github.com/CruzAbrajanSergioArmando" target="_blank" rel="noopener noreferrer" class="flex items-center bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition-colors duration-300">
+            <!-- SVG de GitHub -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.083-.729.083-.729 1.205.085 1.838 1.236 1.838 1.236 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.605-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.468-2.381 1.235-3.221-.123-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.49 11.49 0 013.003-.404c1.02.005 2.045.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.652.241 2.873.119 3.176.77.84 1.232 1.911 1.232 3.221 0 4.61-2.805 5.623-5.475 5.921.43.371.823 1.102.823 2.222v3.293c0 .321.218.694.825.576C20.565 21.796 24 17.299 24 12c0-6.627-5.373-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
+          
+          <!-- Enlace LinkedIn -->
+          <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" class="flex items-center bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition-colors duration-300">
+            <!-- SVG de LinkedIn -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.065-1.872-3.065-1.873 0-2.158 1.459-2.158 2.964v5.7h-3v-10h2.883v1.367h.041c.402-.762 1.385-1.562 2.847-1.562 3.046 0 3.612 2.006 3.612 4.615v5.588z"/>
+            </svg>
+            LinkedIn
+          </a>
+          
+        </div>
+      </div>
+    </section>
+    
+  </main>
+</BaseLayout>
+
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+</style>

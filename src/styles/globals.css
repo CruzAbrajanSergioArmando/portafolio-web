@@ -1,0 +1,19 @@
+/* src/styles/globals.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-text;
+  }
+
+  header {
+    @apply bg-background-header;
+  }
+
+  footer {
+    @apply bg-background-footer;
+  }
+}
