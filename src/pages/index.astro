@@ -1,25 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SobreMi from '../components/SobreMi';
 import ProjectCard from '../components/ProjectCard';
 ---
 <BaseLayout>
   <main class="container mx-auto px-4 py-12">
     
     <!-- Sección: Sobre Mí -->
-    <section id="sobreMi" class="mb-24 animate-fade-in">
-      <h1 class="text-5xl font-bold mb-6 text-center text-gray-900 dark:text-gray-100">Hola, soy Sergio Cruz</h1>
-      <div class="max-w-3xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-md p-8">
-        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-          Soy estudiante de Matemáticas Aplicadas y Computación en la UNAM y un apasionado desarrollador de software. Me especializo en el desarrollo de aplicaciones web, combinando conocimientos en métodos numéricos, álgebra y programación para crear soluciones efectivas y eficientes.
-        </p>
-        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-          Disfruto colaborando en proyectos de código abierto y explorando nuevas tecnologías. Mi objetivo es desarrollar herramientas que no solo resuelvan problemas, sino que también mejoren la experiencia del usuario.
-        </p>
-        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-          ¡Conectemos! Si tienes alguna propuesta de colaboración o deseas conocer más sobre mi trabajo, no dudes en contactarme.
-        </p>
-      </div>
-    </section>
+    <SobreMi />
     
     <!-- Sección: Proyectos -->
     <section id="proyectos" class="mb-24 animate-fade-in">

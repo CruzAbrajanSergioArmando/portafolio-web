@@ -1,54 +1,59 @@
-# Astro Starter Kit: Basics
+# 🌟 **Portafolio Web — Sergio Armando Cruz Abraján**
 
-```sh
-npm create astro@latest -- --template basics
-```
+> 🚀 Mi portafolio personal desarrollado con **Astro**, **React**, **Tailwind CSS** y **Framer Motion**.  
+> Un espacio donde presento mis proyectos, habilidades y pasión por el desarrollo web moderno.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+![banner](https://astro.build/assets/og-image.png)
+*(Puedes reemplazar esta imagen por una captura real de tu sitio 👇)*
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 📑 **Índice**
 
-## 🚀 Project Structure
+1. [✨ Características principales](#-características-principales)  
+2. [🧰 Tecnologías utilizadas](#-tecnologías-utilizadas)  
+3. [🗂️ Estructura del proyecto](#️-estructura-del-proyecto)  
+4. [🧞 Comandos útiles](#-comandos-útiles)  
+5. [💼 Secciones del portafolio](#-secciones-del-portafolio)  
+6. [🚀 Despliegue](#-despliegue)  
+7. [🧠 Aprendizajes y objetivos](#-aprendizajes-y-objetivos)  
+8. [📬 Contacto](#-contacto)  
+9. [⭐ Agradecimiento](#-agradecimiento)
 
-Inside of your Astro project, you'll see the following folders and files:
+---
 
-```text
+## ✨ **Características principales**
+
+✅ Sitio **ultrarrápido** gracias a Astro.  
+🎨 Diseño **moderno y responsive** con Tailwind CSS.  
+⚛️ Componentes **React** integrados perfectamente.  
+🎞️ Animaciones fluidas con **Framer Motion**.  
+🧠 Código limpio y fácil de mantener.  
+🌙 (Opcional) Modo oscuro implementado.  
+
+---
+
+## 🧰 **Tecnologías utilizadas**
+
+| Tecnología | Descripción |
+|-------------|--------------|
+| 🪐 **[Astro](https://astro.build/)** | Framework moderno para sitios estáticos |
+| ⚛️ **[React](https://react.dev/)** | Librería para componentes interactivos |
+| 🎨 **[Tailwind CSS](https://tailwindcss.com/)** | Framework CSS utilitario |
+| 🎞️ **[Framer Motion](https://www.framer.com/motion/)** | Librería de animaciones para React |
+| ☁️ **[Vercel](https://vercel.com/)** | Plataforma recomendada para el despliegue |
+
+---
+
+## 🗂️ **Estructura del proyecto**
+
+```bash
 /
-├── public/
-│   └── favicon.svg
+├── public/               # Archivos estáticos (imágenes, íconos, etc.)
 ├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+│   ├── components/       # Componentes React y Astro
+│   ├── layouts/          # Plantillas base del sitio
+│   ├── pages/            # Rutas principales (index, proyectos, contacto)
+│   ├── sections/         # Secciones personalizadas (sobre mí, habilidades, etc.)
+│   └── styles/           # Configuración y estilos globales
+└── package.json          # Dependencias y scripts
