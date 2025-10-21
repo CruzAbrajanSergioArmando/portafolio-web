@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import TesseractCanvas from "../components/SobreMiTesseract";
 
 export default function SobreMi() {
   return (
@@ -31,11 +32,7 @@ export default function SobreMi() {
         viewport={{ once: true }}
         className="flex justify-center"
       >
-        <img
-          src="/perfil.svg"
-          alt="Ilustración o foto de Sergio"
-          className="w-64 h-auto rounded-2xl shadow-lg"
-        />
+        <TesseractCanvas size={400} color="#60a5fa" speed={1.2} />
       </motion.div>
     </section>
   );
