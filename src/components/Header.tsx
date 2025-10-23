@@ -45,56 +45,52 @@ const Header: React.FC<HeaderProps> = ({ title = "Sergio Cruz" }) => {
       transition={{ type: "spring", stiffness: 100 }}
       className="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm text-gray-800 dark:text-gray-200 shadow-lg"
     >
-      <div className="container mx-auto flex justify-between items-center p-4">
+      <div className="container-base flex justify-between items-center">
         <motion.h1 
           className="text-2xl font-bold"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <a href="/" className="hover:text-primary transition-colors duration-300">
+          <a href="/" className="nav-link">
             {title}
           </a>
         </motion.h1>
 
-        <div className="flex items-center space-x-4">
-          <motion.button 
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            className="text-primary focus:outline-none"
-            onClick={toggleDarkMode}
-            aria-label={isDarkMode ? "Cambiar a modo claro" : "Cambiar a modo oscuro"}
-          >
-            {isDarkMode ? <Sun className="h-6 w-6" /> : <Moon className="h-6 w-6" />}
-          </motion.button>
+        <motion.button 
+          className="icon-button"
+          onClick={toggleDarkMode}
+          aria-label={isDarkMode ? "Cambiar a modo claro" : "Cambiar a modo oscuro"}
+        >
+          {isDarkMode ? <Sun className="h-6 w-6" /> : <Moon className="h-6 w-6" />}
+        </motion.button>
 
-          <nav className="hidden md:flex space-x-6">
-            {navItems.map((item, index) => (
-              <motion.a 
-                key={item.label}
-                href={item.url} 
-                className="hover:text-primary transition-colors duration-300"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-              >
-                {item.label}
-              </motion.a>
-            ))}
-          </nav>
+        <nav className="hidden md:flex space-x-6">
+          {navItems.map((item, index) => (
+            <motion.a 
+              key={item.label}
+              href={item.url} 
+              className="hover:text-primary transition-colors duration-300"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+            >
+              {item.label}
+            </motion.a>
+          ))}
+        </nav>
 
-          <motion.button 
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            className="md:hidden text-primary focus:outline-none"
-            onClick={toggleMenu}
-            aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
-            aria-expanded={isMenuOpen}
-          >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </motion.button>
-        </div>
+        <motion.button 
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="md:hidden text-primary focus:outline-none"
+          onClick={toggleMenu}
+          aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
+          aria-expanded={isMenuOpen}
+        >
+          {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        </motion.button>
       </div>
 
       <AnimatePresence>

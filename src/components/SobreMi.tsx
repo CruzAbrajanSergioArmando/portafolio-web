@@ -3,10 +3,7 @@ import TesseractCanvas from "../components/SobreMiTesseract";
 
 export default function SobreMi() {
   return (
-    <section
-      id="sobreMi"
-      className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-24"
-    >
+    <section id="sobreMi" className="section-fullscreen">
       {/* Texto con animación */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -15,12 +12,11 @@ export default function SobreMi() {
         viewport={{ once: true }}
         className="text-center md:text-left"
       >
-        <h1 className="text-5xl font-bold mb-4 text-gray-900 dark:text-gray-100">
+        <h1 className="section-heading">
           Hola, soy Sergio
         </h1>
-        <p className="text-lg text-gray-600 dark:text-gray-300">
-          Desarrollador web enfocado en crear experiencias digitales modernas,
-          accesibles y visualmente atractivas.
+        <p className="section-lead">
+          Soy un desarrollador Fullstack con una sólida base en matemáticas aplicadas, lo que me permite abordar los proyectos desde una perspectiva analítica y orientada a la eficiencia. Me apasiona crear soluciones web completas, desde la lógica del backend hasta experiencias de usuario fluidas en el frontend. Busco combinar el razonamiento lógico con el diseño funcional para construir software claro, útil y escalable.
         </p>
       </motion.div>
 
@@ -30,7 +26,7 @@ export default function SobreMi() {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
         viewport={{ once: true }}
-        className="flex justify-center"
+        className="tesseract-wrap"
       >
         <TesseractCanvas size={400} color="#60a5fa" speed={1.2} />
       </motion.div>

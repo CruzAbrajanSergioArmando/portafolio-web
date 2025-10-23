@@ -1,35 +1,17 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SobreMi from '../components/SobreMi';
-import ProjectCard from '../components/ProjectCard';
+import Projects from '../components/Projects';
 ---
 <BaseLayout>
-  <main class="container mx-auto px-4 py-12">
-    
+  <main class="container mx-auto px-4">
     <!-- Sección: Sobre Mí -->
-    <SobreMi client:load />
+    <div class="mb-16">
+      <SobreMi client:load />
+    </div>
     
     <!-- Sección: Proyectos -->
-    <section id="proyectos" class="mb-24 animate-fade-in">
-      <h2 class="text-4xl font-semibold text-center mb-12 text-gray-900 dark:text-gray-100">Proyectos Destacados</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <ProjectCard
-          title="Aplicación de Ecuaciones Diferenciales"
-          description="Una aplicación web que utiliza métodos numéricos para resolver ecuaciones diferenciales complejas, proporcionando visualizaciones interactivas."
-          link="https://github.com/tu-usuario/proyecto-ecuaciones"
-        />
-        <ProjectCard
-          title="Sistema de Gestión de Inventario"
-          description="Un sistema eficiente de gestión de inventario basado en algoritmos de optimización para mejorar la precisión y reducir costos."
-          link="https://github.com/tu-usuario/proyecto-inventario"
-        />
-        <ProjectCard
-          title="Herramienta de Visualización de Datos"
-          description="Una herramienta poderosa para la visualización de datos que facilita el análisis estadístico avanzado mediante gráficos interactivos."
-          link="https://github.com/tu-usuario/proyecto-visualizacion"
-        />
-      </div>
-    </section>
+    <Projects client:load />
     
     <!-- Sección: Contacto -->
     <section id="contacto" class="mb-24 animate-fade-in">
