@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = ({ title = "Sergio Cruz" }) => {
   };
 
   const navItems: NavItem[] = [
-    { label: 'Sobre Mí', url: '#sobreMi' },
+    { label: 'Sobre Mí', url: '#sobre-mi' },
     { label: 'Proyectos', url: '#proyectos' },
     { label: 'Contacto', url: '#contacto' },
   ];

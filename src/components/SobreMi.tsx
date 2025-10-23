@@ -3,7 +3,7 @@ import TesseractCanvas from "../components/SobreMiTesseract";
 
 export default function SobreMi() {
   return (
-    <section id="sobreMi" className="section-fullscreen">
+    <section id="sobre-mi" className="section-fullscreen">
       {/* Texto con animación */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}

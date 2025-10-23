@@ -23,6 +23,10 @@
 }
 
 @layer components {
+  .section-scroll {
+    @apply scroll-mt-16;
+  }
+
   .nav-link {
     @apply hover:text-primary transition-colors duration-300;
   }
@@ -41,7 +45,7 @@
   }
 
   .section-fullscreen {
-    @apply min-h-[calc(100vh-4rem)] grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-8;
+    @apply min-h-[calc(100vh-4rem)] grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-8 scroll-mt-16;
   }
 
   .section-heading {

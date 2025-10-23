@@ -4,6 +4,11 @@ import ProjectCard from "./ProjectCard";
 export default function Projects() {
   const projects = [
     {
+      title: "Tienda de Crochet y Amigurumis",
+      description: "E-commerce especializado en figuras de crochet y amigurumis, construido con Next.js y Tailwind CSS. Incluye sistema de gestión de inventario, carrito de compras y pasarela de pagos.",
+      link: "https://github.com/CruzAbrajanSergioArmando/crochet-store",
+    },
+    {
       title: "Aplicación de Ecuaciones Diferenciales",
       description: "Una aplicación web que utiliza métodos numéricos para resolver ecuaciones diferenciales complejas, proporcionando visualizaciones interactivas.",
       link: "https://github.com/tu-usuario/proyecto-ecuaciones",
@@ -23,7 +28,7 @@ export default function Projects() {
   return (
     <motion.section
       id="proyectos"
-      className="mb-24"
+      className="mb-24 scroll-mt-16"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
