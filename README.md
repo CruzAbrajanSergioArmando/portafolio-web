@@ -1,10 +1,10 @@
 # 🌟 **Portafolio Web — Sergio Armando Cruz Abraján**
 
 > 🚀 Mi portafolio personal desarrollado con **Astro**, **React**, **Tailwind CSS** y **Framer Motion**.  
-> Un espacio donde presento mis proyectos, habilidades y pasión por el desarrollo web moderno.
+> Un espacio donde presento mis proyectos, habilidades y pasión por el desarrollo web moderno, combinando mis conocimientos en matemáticas aplicadas y programación.
 
-![banner](https://astro.build/assets/og-image.png)
-*(Puedes reemplazar esta imagen por una captura real de tu sitio 👇)*
+[![banner](https://user-images.githubusercontent.com/YourUserID/your-repo/main/public/preview.png)](https://your-portfolio-url.com)
+*(Vista previa del portafolio)*
 
 ---
 
