@@ -57,3 +57,35 @@
 │   ├── sections/         # Secciones personalizadas (sobre mí, habilidades, etc.)
 │   └── styles/           # Configuración y estilos globales
 └── package.json          # Dependencias y scripts
+```
+
+---
+
+## 🧞 **Comandos útiles**
+
+El proyecto incluye varios scripts útiles definidos en `package.json`. A continuación se describen y se muestran ejemplos de uso.
+
+| Comando | Qué hace |
+|---------|---------|
+| `npm install` | Instala las dependencias del proyecto |
+| `npm run dev` | Inicia el servidor de desarrollo (ejecuta `astro dev`) |
+| `npm start` | Alias que también inicia el servidor de desarrollo (`astro dev`) |
+| `npm run build` | Ejecuta `astro check` y luego `astro build` para generar la versión de producción |
+| `npm run preview` | Inicia `astro preview` para servir la build localmente |
+| `npm run astro` | Ejecuta el binario local de Astro — útil para comandos directos de Astro |
+
+Ejemplos rápidos:
+
+```zsh
+# instalar dependencias
+npm install
+
+# iniciar servidor de desarrollo
+npm run dev
+
+# construir para producción
+npm run build
+
+# previsualizar la build
+npm run preview
+```
