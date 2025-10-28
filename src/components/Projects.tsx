@@ -4,6 +4,11 @@ import ProjectCard from "./ProjectCard";
 export default function Projects() {
   const projects = [
     {
+      title: "Snake-pro",
+      description: "Snake Pro es una reinterpretación del clásico juego de la serpiente, desarrollada utilizando Next.js, TypeScript y Tailwind CSS. Este proyecto destaca por su diseño responsivo, su rendimiento eficiente y su propósito educativo en el ámbito del desarrollo web moderno.",
+      link: "https://snake-pro.vercel.app/juego",
+    },
+    {
       title: "Tienda de Crochet y Amigurumis",
       description: "E-commerce especializado en figuras de crochet y amigurumis, construido con Next.js y Tailwind CSS. Incluye sistema de gestión de inventario, carrito de compras y pasarela de pagos.",
       link: "https://github.com/CruzAbrajanSergioArmando/crochet-store",
